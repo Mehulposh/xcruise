@@ -7,10 +7,15 @@
     <style>
         body{
             font-family: sans-serif;
+            background-color: beige;
         }
         header{
             height: 40vh;
             margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         header img{
@@ -19,11 +24,28 @@
             object-fit: cover;
         }
 
+
+        .button{
+            background-color: #f25605;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: white;
+            border: none;
+            margin-top: 10px;
+            
+        }
+
         main{
             position: relative;
             margin-left: 10px;
             margin-right: 10px;
-            background-color: beige;
+            
+        }
+
+        #lower-btn{
+            position: absolute;
+            bottom: 0;
+            left: 45%;
         }
 
         .side-images img{
@@ -39,19 +61,13 @@
     </style>
 </head>
 <body>
-    <!-- <nav class="navbar">
-        <div class="logo">
-            <img  src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/xCruise-logo.png?raw=true" alt="logo">
-        </div>
-        <div class="menu">
-            <a href="#">Home</a>
-            <a href="#destination">Destinations</a>
-            <a href="#">Deals</a>
-        </div>
-    </nav> -->
+    
     <main>
         <header>
             <img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/caribbean-cruise.png?raw=true" alt="caribbean cruise">
+            <a href="../booking.html">
+                <button class="button">Book Now</button>
+            </a>
         </header>
         <section class="details"> 
             
@@ -64,7 +80,11 @@
         <section class="side-images">
             <img src="../assets/best-caribbean-islands-st-vincent-grenadines-00-CARIBISLANDSWB21-f0a27cb6a10d4f2894bd5984e72de8e3.webp" alt="">
         </section>
+        
     </main>
+    <a href="../booking.html">
+        <button class="button" id="lower-btn">Book Now</button>
+    </a>
     
 </body>
 </html>
